@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<style type="text/css">
+	.calc{
+		background:#cfcfff;
+		height: 370px;
+		width: 250px;
+		margin: 8% 40%;
+		border-radius: 5px;
+		padding: 20px;
+		box-shadow: 0px 0px 10px grey;
+	}
+	input{
+		width: 50px;
+		height: 50px;
+		background: #262626;
+		color: whitesmoke;
+		border: none;
+		border-radius: 5px;
+		margin: 4px;
+		font-size: 20px;
+		font-weight: bolder;
+		transition-duration: 0.5s;
+	}
+	.operator{
+		background: #f7f065; 
+	}
+	.operator:hover{
+		transform: scale(1.0);
+	}
+	.ac{
+		width: 112px;			
+		margin-right: 5px;
+		border-radius: 20px;
+	}
+
+	.op{
+		height: 70px;
+		width: 230px;
+		background-color: transparent;
+		box-shadow: 0px 0px 3px black;
+		color: black;
+		font-size: 25px;
+		text-align: right;
+	}
+	#allclear{
+		background: #e8e156;
+	}
+	.operator:hover
+	{
+		transform: scale(0.9);
+	}
+	input[type="button"]:hover
+	{
+		transform: scale(1.0);
+		box-shadow: 0px 0px 7px black;
+	}
+	input[value]:hover{
+		color: rgb(204, 204, 0);
+		font-size: 25px;
+	}
+
+	.body{
+		background-image: url("https://i.gifer.com/BXe0.gif");
+		background-size: cover;
+	}
+	</style>
+</head>
+<body class="body">
+	<div class="calc">
+		<form>
+			<div>
+				<input type="text" name="op" disabled class="op" >
+			</div>
+			<div>
+				<input type="button" value="AC" onclick="op.value=''" class="ac" id="allclear">
+				<input type="button" value="C" onclick="op+=''" class="operator">
+				<input type="button" value="%" onclick="op+='%'" class="operator">
+			</div>
+			<div>
+				<input type="button" value="7" onclick="op.value+='7'">
+				<input type="button" value="8" onclick="op.value+='8'">
+				<input type="button" value="9" onclick="op.value+='9'">
+				<input type="button" value="+" onclick="op.value+='+'" class="operator">
+			</div>
+			<div>
+				<input type="button" value="4" onclick="op.value+='4'">
+				<input type="button" value="5" onclick="op.value+='5'">
+				<input type="button" value="6" onclick="op.value+='6'">
+				<input type="button" value="-" onclick="op.value+='-'" class="operator">
+			</div>
+			<div>
+				<input type="button" value="1" onclick="op.value+='1'">
+				<input type="button" value="2" onclick="op.value+='2'">
+				<input type="button" value="3" onclick="op.value+='3'">
+				<input type="button" value="*" onclick="op.value+='*'" class="operator">
+			</div>
+			<div>
+				<input type="button" value="." onclick="op.value+='.'">
+				<input type="button" value="0" onclick="op.value+='0'">
+				<input type="button" value="=" onclick="op.value=eval(op.value)">
+				<input type="button" value="/" onclick="op+='/'" class="operator">
+			</div>
+			<script type="text/javascript">
+				function clear(){
+					let 
+				}
+			</script>
+		</form>	
+	</div>
+</body>
+</html>
